@@ -1,0 +1,94 @@
+%YAML 1.1
+---
+# team18.user
+-
+  empno: 2001100
+  email: "F.Christmas@murdoch.edu.au"
+  fname: "Father"
+  lname: "Christmas"
+  pwd: "password"
+-
+  empno: 2001101
+  email: "D.Duck@murdoch.edu.au"
+  fname: "Donald"
+  lname: "Duck"
+  pwd: "password"
+-
+  empno: 2001102
+  email: "Da.Duck@murdoch.edu.au"
+  fname: "Dafff"
+  lname: "Duck"
+  pwd: "password"
+-
+  empno: 2001669
+  email: "L.Langford@murdoch.edu.au"
+  fname: "Lauren"
+  lname: "langford"
+  pwd: "password"
+-
+  empno: 20001001
+  email: "T.Abbott@murdoch.edu.au"
+  fname: "Tony"
+  lname: "Abbott"
+  pwd: "password"
+-
+  empno: 20001002
+  email: "J.Langford@murdoch.edu.au"
+  fname: "Jorge"
+  lname: "Langford"
+  pwd: "password"
+-
+  empno: 20001003
+  email: "T.Jones@murdoch.edu.au"
+  fname: "Tom"
+  lname: "Jones"
+  pwd: "passwprd"
+-
+  empno: 20001091
+  email: "S.Jones@murdoch.edu.au"
+  fname: "Susan"
+  lname: "Jones"
+  pwd: "password"
+-
+  empno: 20001508
+  email: "D.Smith@murdoch.edu.au"
+  fname: "David"
+  lname: "Smith"
+  pwd: "password"
+-
+  empno: 20001666
+  email: "L.Hill@murdoch.edu.au"
+  fname: "Lauryn"
+  lname: "Hill"
+  pwd: "password"
+-
+  empno: 20001667
+  email: "J.Dilla@murdoch.edu.au"
+  fname: "Jay"
+  lname: "Mascis"
+  pwd: "password"
+-
+  empno: 20001668
+  email: "P.Ng@murdoch.edu.au"
+  fname: "Paean"
+  lname: "Ng"
+  pwd: "password"
+-
+  empno: 20001700
+  email: "P.Collins@murdoch.edu.au"
+  fname: "Phil"
+  lname: "Collins"
+  pwd: "password"
+-
+  empno: 20001918
+  email: "D.Bowie@murdoch.edu.au"
+  fname: "David"
+  lname: "Bowie"
+  pwd: "password"
+-
+  empno: 20001946
+  email: "J.Brown@murdoch.edu.au"
+  fname: "Jo"
+  lname: "Brown"
+  pwd: "password"
+...
