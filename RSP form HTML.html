@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>RestPro Academic Booking System</title>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+        
+      
+      <link rel="stylesheet" href="../../../../public_html/css/style.css">
+
+      
+            
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- Parsley JS for form validating-->
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.0.7/parsley.js"></script>
+      
+        <!-- Native JS Script js/ -->
+        <script src="../../../../public_html/js/script.js"></script>
+      
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+      
+      
+      <style type="text/css">
+      
+        body { padding-top: 100px;}
+        footer { margin-top: 100px; }
+        table, td, th { vertical-align: middle; border: none; }
+        th { border-bottom: 1px solid #DDD; }
+          
+
+        .col-centered{
+            float: none;
+            margin: 0 auto;
+        } 
+          
+        /* CUSTOM X-LARGE BUTTONS */
+          
+
+  .btn-xlarge {
+    padding: 18px 28px;
+    font-size: 22px; //change this to your desired size
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}          
+
+        /* CUSTOM RED NAV BAR FOR ADMIN */
+          
+          .navbar-custom {
+  background-color: #eb4f39;
+  border-color: #e8341b;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f07867), to(#eb4f39));
+  background-image: -webkit-linear-gradient(top, #f07867, 0%, #eb4f39, 100%);
+  background-image: -moz-linear-gradient(top, #f07867 0%, #eb4f39 100%);
+  background-image: linear-gradient(to bottom, #f07867 0%, #eb4f39 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff07867', endColorstr='#ffeb4f39', GradientType=0);
+}
+.navbar-custom .navbar-brand {
+  color: #ffffff;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #e6e6e6;
+  background-color: transparent;
+}
+.navbar-custom .navbar-text {
+  color: #ffffff;
+}
+.navbar-custom .navbar-nav > li:last-child > a {
+  border-right: 1px solid #e8341b;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #ffffff;
+  border-left: 1px solid #e8341b;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #c5c5c5;
+  background-color: transparent;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #c5c5c5;
+  background-color: #e8341b;
+  background-image: -webkit-gradient(linear, left 0%, left 100%, from(#e8341b), to(#ed5d49));
+  background-image: -webkit-linear-gradient(top, #e8341b, 0%, #ed5d49, 100%);
+  background-image: -moz-linear-gradient(top, #e8341b 0%, #ed5d49 100%);
+  background-image: linear-gradient(to bottom, #e8341b 0%, #ed5d49 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe8341b', endColorstr='#ffed5d49', GradientType=0);
+}
+.navbar-custom .navbar-nav > .disabled > a,
+.navbar-custom .navbar-nav > .disabled > a:hover,
+.navbar-custom .navbar-nav > .disabled > a:focus {
+  color: #cccccc;
+  background-color: transparent;
+}
+.navbar-custom .navbar-toggle {
+  border-color: #dddddd;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #dddddd;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #cccccc;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+  border-color: #e83219;
+}
+.navbar-custom .navbar-nav > .dropdown > a:hover .caret,
+.navbar-custom .navbar-nav > .dropdown > a:focus .caret {
+  border-top-color: #c5c5c5;
+  border-bottom-color: #c5c5c5;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  background-color: #e8341b;
+  color: #c5c5c5;
+}
+.navbar-custom .navbar-nav > .open > a .caret,
+.navbar-custom .navbar-nav > .open > a:hover .caret,
+.navbar-custom .navbar-nav > .open > a:focus .caret {
+  border-top-color: #c5c5c5;
+  border-bottom-color: #c5c5c5;
+}
+.navbar-custom .navbar-nav > .dropdown > a .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+@media (max-width: 767) {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #c5c5c5;
+    background-color: transparent;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #c5c5c5;
+    background-color: #e8341b;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #cccccc;
+    background-color: transparent;
+  }
+}
+.navbar-custom .navbar-link {
+  color: #ffffff;
+}
+.navbar-custom .navbar-link:hover {
+  color: #c5c5c5;
+}
+          
+      </style>
+         
+       
+  </head>
+ 
+
+<body>
+        
+    
+    <div class="container">
+        
+        <h1>FORM</h1>
+        
+        <hr>
+        
+        <h2>BACKGROUND</h2>
+        
+        <form id="form" name="form" method="post">
+        
+        <div class="form-group">
+           <label for="fname">First Name</label>
+            <input type="text" class="form-control" id="fname" placeholder="fname" name="fname" required maxlength="30" minlength="2" >
+        </div>
+            
+            
+        <div class="form-group">
+           <label for="lname">Last Name</label>
+            <input type="text" class="form-control" id="lname" placeholder="lname" name="lname" required maxlength="30" minlength="2" >
+        </div> 
+            
+        <div class="form-group">
+           <label for="school">School</label>
+            <input type="text" class="form-control" id="school" placeholder="school" name="school" required maxlength="100" minlength="5">
+        </div>        
+            
+        <hr/>
+            
+            <h3>PAST RSP</h3>
+
+            <p>Have you completed an RSP (Previously, ASP and OSP) in the past 18 months?</p>
+            
+            <div class="radio">
+              <label>
+                <input type="radio" name="pastRsp" id="pastRsp" value="yes" required>
+                YES
+              </label>
+            </div>
+            
+            <div class="radio">
+              <label>
+                <input type="radio" name="pastRsp" id="pastRsp" value="no" required >
+                NO
+              </label>
+            </div> 
+        <hr>    
+              <h3>PERIODS APPLIED FOR</h3>
+        
+            
+            <p>Is the RSP to be completed in a single or split period:</p>
+            
+           <div class="radio">
+              <label>
+                <input type="radio" name="splitPeriod" id="splitPeriod" value="single" required >
+                SINGLE
+              </label>
+            </div>
+            
+            <div class="radio">
+              <label>
+                <input type="radio" name="splitPeriod" id="splitPeriod" value="split" required>
+                SPLIT
+              </label>
+            </div> 
+            
+        <hr>
+            
+            <div class="single">
+
+            {SINGLE - Only show if single date.} <br><br>
+            <label for="start  form-inline">Dates</label>    
+            <div class="form-group  form-inline">
+          
+                Start: <input type="text" class="form-control" name="start" id="start" placeholder="yyyy-mm-dd" pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
+                Finish: <input type="text" class="form-control" name="finish" id="finish" placeholder="yyyy-mm-dd" pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
+            </div>
+                
+                
+                
+                
+            </div><!-- single -->
+            
+            <div class="split">
+            
+            {SPLIT - Only show if split date. } <br><br>
+     
+            <label for="period1">Period 1</label> 
+            <div class="form-group  form-inline">
+               
+            Start: <input type="text" class="form-control" name="start1" id="start1" placeholder="yyyy-mm-dd" pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
+                
+            Finish: <input type="text" class="form-control" name="finish1" id="finish1" placeholder="yyyy-mm-dd" pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
+            </div>
+                
+                
+            <label for="period2">Period 2</label> 
+                
+            <div class="form-group  form-inline">
+  
+                Start: <input type="text" class="form-control" name="start2" id="start2" placeholder="yyyy-mm-dd" 
+                       
+                       pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))"
+                       >
+                
+                Finish: <input type="text" class="form-control" name="finish2" id="finish2" placeholder="yyyy-mm-dd" pattern="(?:19|20)[0-9]{2}-(?:(?:0[1-9]|1[0-2])-(?:0[1-9]|1[0-9]|2[0-9])|(?:(?!02)(?:0[1-9]|1[0-2])-(?:30))|(?:(?:0[13578]|1[02])-31))">
+            </div>    
+            </div>
+            
+            
+            <div class="form-group">
+               <label for="length"></label>
+                <input type="text" style="width:10px;" class="form-control" id="length" placeholder="00" name="length" required maxlength="2">
+            </div>
+        
+            <hr>
+
+            <hr>
+
+            <hr>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            
+        </form>
+    
+    </div>
+    
+
+</body>
+</html>
